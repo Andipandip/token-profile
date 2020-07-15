@@ -23,7 +23,7 @@ You are responsible for the information you submitted. Please ensure that the to
 
 In order to ensure the authenticity of the information submitted, please publish an announcement on your website or official social media channels and attach the corresponding link in “Official announcement”. We recommended a format similar to the following:
 >\#imToken #1636
-We are providing XXX token’s information on imToken. After completion, you can see the logo and full information inside imToken’s Token Manager.
+We are providing AVN token’s information on imToken. After completion, you can see the logo and full information inside imToken’s Token Manager.
 
 Note:
 - 1636 is the PR number, as in: https://github.com/consenlabs/token-profile/pull/1636 
@@ -46,7 +46,7 @@ This number is the key to verify yourself as the rightful editor of the informat
 
 2. Clone the repo from your own account, please note: do no clone the origin one directly, but clone the repo you forked
 ```
-git clone git@github.com:xxxxxxxx/token-profile.git
+git clone git@github.com:0xa614f9293d9ce8b61357b916b6c2c08b9e7f8e43/token-profile.git
 cd token-profile/
 ```
 
@@ -54,14 +54,14 @@ cd token-profile/
 3. Create a new branch (file) and switch to a new branch named by your token symbol
   For example:
 ```
-git branch xxx-token
-git checkout xxx-token
+git branch AVN-token
+git checkout AVN-token
 ```
 
 
 4. Add a new json file to the erc20 directory, named by your token contract address. Please note the contract address should be done with capitalization with [checksum](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md) 
   For example:
-  *0xf90f1648926005A8bb3ed8ec883164De7F768743.json* [Checksum tool](https://ethsum.netlify.com/)
+  *0x9c70D078A46F7E8779a324690c4BbA367aDe9044.json* [Checksum tool](https://ethsum.netlify.com/)
 
 
 5. Please ensure to use UTF-8 encoding in the json file to avoid Travis-CI build error.The contract address in the json also needs to use **checksum**.Please check the template file to fill in the complete token information: [$template.json](../erc20/$template.json)
@@ -73,8 +73,8 @@ git checkout xxx-token
   For example:
 ```
 git add -A
-git commit -m “Add xxx token”
-git push origin xxx-token
+git commit -m “Add AVN”
+git push origin AVN-token
 ```
 
 
